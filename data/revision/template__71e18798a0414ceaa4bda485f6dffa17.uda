@@ -1,0 +1,1 @@
+{"File":"umb://template-file/NewsArticle.cshtml","Master":null,"Udi":"umb://template/71e18798a0414ceaa4bda485f6dffa17","Dependencies":[{"Udi":"umb://template-file/NewsArticle.cshtml","Ordering":true,"Mode":0}],"Name":"News Article","Alias":"NewsArticle","__type":"Umbraco.Deploy,Umbraco.Deploy.Artifacts.TemplateArtifact","__version":"1.0.6"}
