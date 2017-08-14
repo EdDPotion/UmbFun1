@@ -7,7 +7,7 @@
 <section class="section section--themed section--header section--content-center-bottom">
 		<div class="section__hero-content">
 		     <!-- Insert the PageName field Here -->
-			<h1 class="no-air">Article Name</h1>
+			<h1 class="no-air">@Umbraco.Field("pageName")</h1>
 		</div>
 </section>
 
@@ -23,7 +23,7 @@
             
             <h4>
                 <!-- Insert the Summary field Here -->
-                Summary of the article
+                @Umbraco.Field("summary")
             </h4>
             
             <h5>
@@ -32,19 +32,7 @@
             </h5>
             
             <!-- Insert the BodyText field here -->
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus accumsan vehicula felis nec gravida. 
-            Proin dictum magna dui, id efficitur lorem maximus at. Sed hendrerit suscipit turpis mattis aliquam. 
-            Proin ut aliquam nisi, nec ultrices nunc. Ut ut vestibulum justo, ut sagittis turpis. Pellentesque 
-            tincidunt mauris risus, nec imperdiet lorem tincidunt eget. Proin elementum sapien id rutrum molestie. 
-            Aenean ultrices vel arcu eleifend hendrerit.</p>
-
-            <p>Proin tincidunt quam nec tellus porttitor, in placerat nisl porta. Duis suscipit molestie nisl, 
-            commodo ullamcorper nulla gravida et. Aliquam molestie nisl at ultricies elementum. 
-            Curabitur et lacus id tortor lacinia accumsan. Sed ut ipsum sed lorem ornare lacinia in sit amet leo. 
-            Sed et vehicula erat. Nam feugiat nunc quis ex ullamcorper, at sollicitudin magna commodo. 
-            Curabitur et blandit ante. Nullam sagittis et ex eget imperdiet.
-            </p>
-            
+            @Umbraco.Field("bodyText")
             
             </article>
         </div>
