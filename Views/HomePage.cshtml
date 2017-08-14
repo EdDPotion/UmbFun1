@@ -1,6 +1,12 @@
 ﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
 @{
 	Layout = "Layout.cshtml";
+	
+	var site = Model.Content.Site();
+	var articles = site.FirstChild<NewsArea>()
+	                    .Childern<NewsArticle>()
+	                    .OrderByDescending(x => x.CreateDate)
+	                    .Take(3);
 }
 
 @* the fun starts here *@
