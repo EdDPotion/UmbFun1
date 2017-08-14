@@ -5,7 +5,7 @@
 	var site = Model.Content.Site();
 	
 	var articles = site.FirstChild<NewsArea>()
-	                    .Childern<NewsArticle>()
+	                    .Children<NewsArticle>()
 	                    .OrderByDescending(x => x.CreateDate)
 	                    .Take(3);
 
