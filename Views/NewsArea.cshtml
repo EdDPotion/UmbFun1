@@ -2,6 +2,9 @@
 @using ContentModels = Umbraco.Web.PublishedContentModels;
 @{
 	Layout = "Layout.cshtml";
+	var articles = Model.Content
+	                .Children<NewsArticle>()
+	                .OrderByDescending(x => x.CreateDate);
 }
 
 <!-- News area header -->
