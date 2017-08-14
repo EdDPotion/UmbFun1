@@ -10,7 +10,7 @@
 	                    .OrderByDescending(x => x.CreateDate)
 	                    .Take(3);
 	*@
-	var articles = Model.Content.
+	var articles = Model.Content.NewsPicker.OfType<NewsArticle>();
 }
 
 @* the fun starts here *@
