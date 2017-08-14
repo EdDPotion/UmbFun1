@@ -93,17 +93,17 @@
 
                     <div class="col-md-12 ta-center">
                         <!-- Use the companyName value here -->
-                        CompanyName
+                        @Umbraco.Field("companyName", recursive: true)
                         
 						&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp;&nbsp; 
 
                         <!-- Use the companyAddress value here -->
-                        Road 5, Zipcode-60000
+                        @Umbraco.Field("companyAddress", recursive: true)
                         
 						&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp;&nbsp; 
 						
                         <!-- Use the companyPhone value here -->
-						+45 21 22 22 22
+						@Umbraco.Field("companyPhone", recursive: true)
                     </div>
                 </div>
             </div>
