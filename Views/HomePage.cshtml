@@ -5,17 +5,17 @@
 	
 	var site = Model.Content.Site();
 	
-	@*
+	
 	var articles = site.FirstChild<NewsArea>()
 	                    .Children<NewsArticle>()
 	                    .OrderByDescending(x => x.CreateDate)
 	                    .Take(3);
 
-			*@
+		
 	
-	
+	@*
 		var articles = Model.Content.SelectedNews.OfType<NewsArticle>();
-			
+				*@
 }
 
 @* the fun starts here *@
