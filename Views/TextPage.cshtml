@@ -25,7 +25,8 @@
             <nav class="nav-bar nav-bar--list">
             @foreach(var child in Model.Content.AncestorOrSelf(2).Children)
             {
-                   <a class="nav-link nav-link--black nav-link--air-bottom"
+                   <a class="nav-link nav-link--black nav-link--air-bottom
+                   @child.IsAncestorOrSelf(Model.Content, "nav-link--active")"
                    href="@child.Url">@child.Name</a>
 
             }
