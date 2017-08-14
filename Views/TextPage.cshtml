@@ -23,10 +23,13 @@
 
         <div class="col-md-3">
             <nav class="nav-bar nav-bar--list">
+            @foreach(var child in Model.Content.AncestorOrSelf(2).Children)
+            {
+                   <a class="nav-link nav-link--black nav-link--air-bottom"
+                   href="@child.Url">@child.MetaTitle</a>
 
-                <a class="nav-link nav-link--black nav-link--air-bottom"
-                   href="#">Child page</a>
-
+            }
+             
                 <a class="nav-link nav-link--black nav-link--air-bottom nav-link--active"
                    href="#">Child page</a>
 
