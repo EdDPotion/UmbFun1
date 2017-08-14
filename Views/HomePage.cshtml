@@ -4,7 +4,6 @@
 	
 	var site = Model.Content.Site();
 	
-
 	var articles = site.FirstChild<NewsArea>()
 	                    .Childern<NewsArticle>()
 	                    .OrderByDescending(x => x.CreateDate)
