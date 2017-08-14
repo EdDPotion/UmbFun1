@@ -39,10 +39,16 @@
 
             <!-- Our Top navigation -->
             <nav class="nav-bar top-nav">
-                <a class="nav-link" href="/">Home</a>
+              @foreach(var child in Model.Content.Site().Children)
+              {
+                <a class="nav-link" href="@child.Url">@child.Name</a>
+              }
+               <!-- 
                 <a class="nav-link nav-link--active" href="/">Link</a>
                 <a class="nav-link" href="/">Link 2</a>
                 <a class="nav-link" href="/">Link 3</a> 
+                -->
+                
             </nav>
 
         </header>
