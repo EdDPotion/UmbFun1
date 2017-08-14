@@ -32,19 +32,24 @@
 				<div class="blogposts">
 				
                     <!-- Start of news article listing -->
-					<a href="#" class="blogpost blogpost-with-image">
+				@foreach(var article in articles){
+				
+				<a href="@article.Url" class="blogpost blogpost-with-image">
 						<div class="blogpost-info">
 							<div class="blogpost-meta">
-								<small class="blogpost-date">1/11 2017</small>
-								<small class="blogpost-cat">Umbraco, Meh, News, Tag</small>
+								<small class="blogpost-date">@article.CreateDate</small>
+								<small class="blogpost-cat">@String.Join(",", article.Categories)</small>
 							</div>
-							<h3 class="blogpost-title">consectetur adipiscing elit</h3>
-							<div class="blogpost-excerpt">Proin tincidunt quam nec tellus porttitor, in placerat nisl porta. Duis suscipit molestie nisl, commodo ullamcorper nulla gravida et. Aliquam molestie nisl at ultricies elementum</div>
+							<h3 class="blogpost-title">article.Name</h3>
+							<div class="blogpost-excerpt">@article.Summary</div>
 						</div>
 							
 						<!--- optional  - if the article has a image assigned to it -->
 						<div class="blogpost-image" style="background-image: url('#')"></div>	
 					</a>
+				
+				}
+					
 					<!-- End of article listing -->
                     
 
